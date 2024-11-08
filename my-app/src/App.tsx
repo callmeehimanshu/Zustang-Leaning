@@ -1,15 +1,25 @@
 import { Button } from '@mui/material';
+import { Box, Container } from '@mui/system';
 import React from 'react';
-
+import { Typography } from '@mui/material';
 import './App.css';
+import useHabbitStore from './store/Store';
+import AddHabbit from './components/AddHabbit';
 
 function App() {
+  const storeValues=useHabbitStore();
+  console.log(storeValues);
+  
   return (
-    <div >
-     hello
-     
-     
-    </div>
+   <Container>
+    <Box>
+    <Typography variant="h4" component="h2" align='center'>
+       hello
+    </Typography>
+    {/* // from */}
+    <AddHabbit/>
+    </Box>
+   </Container>
   );
 }
 
