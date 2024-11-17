@@ -5,6 +5,7 @@ import { Typography } from '@mui/material';
 import './App.css';
 import useHabbitStore from './store/Store';
 import AddHabbit from './components/AddHabbit';
+import List from './components/List';
 
 function App() {
   const storeValues=useHabbitStore();
@@ -18,6 +19,7 @@ function App() {
     </Typography>
     {/* // from */}
     <AddHabbit/>
+    <List/>
     </Box>
    </Container>
   );
